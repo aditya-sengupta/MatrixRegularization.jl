@@ -1,21 +1,21 @@
-abstract type constraint end
+abstract type Constraint end
 
-struct tv <: constraint end
-struct nn <: constraint end
-struct sp <: constraint end
-struct tvnn <: constraint end
-struct spnn <: constraint end
+struct tv <: Constraint end
+struct nn <: Constraint end
+struct sp <: Constraint end
+struct tvnn <: Constraint end
+struct spnn <: Constraint end
 
-struct box{T} <: constraint
+struct Box{T} <: constraint
     xmin::T
     xmax::T
 end
 
-struct energy{T} <: constraint
+struct Energy{T} <: constraint
     xenergy::T
 end
 
-struct project{T} <: constraint
+struct Project{T} <: constraint
     xmin::T
     xmax::T
     xenergy::T

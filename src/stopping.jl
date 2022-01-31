@@ -1,5 +1,4 @@
 abstract type Stop end
-# abstract type Conv <: Stop end
 
 # Tol is a bit redundant
 # but I think it's faster than 
